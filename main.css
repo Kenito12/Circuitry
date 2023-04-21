@@ -1,0 +1,168 @@
+/* font-family: 'Arimo', sans-serif;
+font-family: 'Heebo', sans-serif; */
+
+:root{
+    --Pblack: #22202a;
+    --Ppurple: #814e76;
+}
+
+body{
+    margin: 0;
+}
+
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: var(--Pblack);
+    text-align: center;
+}
+
+.loadanim{
+    width: 85%;
+    height: auto;
+    align-self: center;
+}
+
+#mainPage{
+    margin: 0;
+    position: relative;
+    background-color:white;
+    /* z-index: -1; */
+}
+
+
+#firstTime{
+    position: relative;
+}
+#welcome{
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--Ppurple);
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+#welcomeWrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+#firstAnim > svg{
+    transform: translateY(-40px)!important;
+}
+#firstPandB{
+    width: 80%;
+    margin: 0 auto;
+}
+#firstPandB > p{
+    color: var(--Pblack);
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    transform: translateY(-60px)!important;
+}
+#firstPandB{
+    align-items: center;
+    align-content: center;
+}
+
+.welButt{
+    width: 272px;
+    height: 57px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: white;
+    background-color: var(--Ppurple);
+    border: none;
+    transform: translateY(-40px)!important;
+    margin-bottom: 3%;
+}
+.welButt:active{
+    background-color: #d3b2cc;
+}
+#butWrap{
+    margin: 0 auto;
+    width: 272px;
+}
+
+.header{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: var(--Ppurple);
+    font-size: 3.7rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.circuitTab{
+    width: 363px;
+    height: 80px;
+    background-color: var(--Ppurple);
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75rem rgba(208, 199, 200, 0.564));
+    margin: 0 auto 15px;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    font-style: italic;
+    overflow: hidden;
+    position: relative;
+}
+.circuitTab > div{
+    display: none;
+}
+.expandTab{
+    height: 136px;
+    overflow: visible;
+}
+.expandTab > div{
+    animation: fadein 0.3s;
+    display: block;
+}
+.circuitname{
+    padding: 20px 15px 0 15px;
+}
+.time{
+    float: right;
+    font-style: normal;
+}
+
+.subBut{
+    width: 363px;
+    height: 55px;
+    background-color: white;
+    color: var(--Ppurple);
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+.subBut > h2{
+    padding-top: 10px;
+    text-align: center;
+}
+.subBut > img{
+    float: right;
+    width: 30px;
+    padding-right: 15px;
+    transform: translateY(-30px)!important;
+}
+.subBut:active{
+    background-color: rgb(227, 227, 227);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+

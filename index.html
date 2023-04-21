@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>🟪CIRCUITRY🟪</title>
+</head>
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loadanim" id="loadani"></div>
+    </div>
+
+    <div id="mainPage">
+
+        <div id="firstTime">
+            <div id="welcomeWrapper">
+                <h1 id="welcome">Welcome<br>to Circuitry!</h1>
+            </div>
+            <div id="firstAnim"></div>
+            <div id="firstPandB">
+                <p>
+                With Circuitry, you have<br>
+                the flexibility to choose from<br> 
+                pre-designed workouts or create<br> 
+                your own, allowing for a truly<br> 
+                personalized fitness experience.<br> 
+                </p>
+                <div id="butWrap">
+                    <a href="https://www.shape.com/fitness/workouts/how-build-perfect-circuit-workout" target="_blank">
+                    <button class="welButt">Learn More</button>
+                    </a>
+                    <br>
+                    <button class="welButt">Create My First Circuitry</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="homePage">
+            <h1 class="header">My Circuits</h1>
+            <div id="tabrender">
+                <div class="circuitTab" onclick="toggleWidth(this)">
+                    <h2 class="circuitname">Circuit1 <span class="time">30min</span></h2>
+                    <div class="subBut" onclick="BeginCircit()">
+                        <h2>Begin Circuit</h2>
+                        <img src="Assets/arrow.png" alt="arrow.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js" integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
