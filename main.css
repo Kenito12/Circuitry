@@ -262,3 +262,97 @@ body{
     margin-bottom: 3%;
 }
 
+.circuitCreate{
+    text-align: center;
+}
+.titleExc{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 59px;
+    color: var(--Ppurple);
+    text-align: left;
+}
+.titleExcWrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.excTab{
+    width: 363px;
+    height: 80px;
+    background-color: var(--Ppurple);
+    color: white;
+    font-family: 'Arimo', sans-serif;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75rem rgba(208, 199, 200, 0.564));
+    margin: 0 auto 15px;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    font-style: italic;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+.excTab > div{
+    display: none;
+}
+.excTab > p{
+    display:none;
+    padding: 10px 15px 0 15px;
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-size:18px;
+}
+.excExpandTab{
+    height: 230px;
+    overflow: visible;
+}
+.excExpandTab > div{
+    animation: fadein 0.3s;
+    display: block;
+}
+.excExpandTab > p {
+    animation: fadein 0.3s;
+    display: block;
+}
+.excTitle{
+    padding: 20px 15px 0 15px;
+}
+
+.excNext{
+    width: 363px;
+    height: 55px;
+    background-color: white;
+    color: var(--Ppurple);
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+.excNext > h2{
+    padding-top: 10px;
+    text-align: center;
+    font-style: normal;
+}
+.excNext > img{
+    float: right;
+    width: 30px;
+    padding-right: 15px;
+    transform: translateY(-30px)!important;
+}
+.excNext:active{
+    background-color: rgb(132, 132, 132);
+}
+.backButt{
+    width: 212px;
+    height: 44px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 23px;
+    color: white;
+    background-color: var(--Ppurple);
+    border: none;
+    margin-bottom: 3%;
+}
+

@@ -70,9 +70,131 @@
             <button class="createButt" id="cancelBut">Cancel</button>
         </div>
 
-        <div id="createCircuit2">
-            createCircuit2
+        <div id="createCircuit2" class="circuitCreate">
+            <div class="titleExcWrap">
+                <h1 class="titleExc">Pick Your<br>Upper-Body<br>Exercise</h1>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Push-up</h2>
+                <p class="upperDesk">Lifting and lowering the body using the arms.</p>
+                <div class="excNext" onclick="excPick('upperBody','Push-up')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Tricep dip</h2>
+                <p class="upperDesk">Lifting and lowering the body, with the feet planted on the ground and the hands placed on a stable surface.</p>
+                <div class="excNext" onclick="excPick('upperBody', 'Tricep dip')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Bent-over row</h2>
+                <p class="upperDesk">Pulling a weight towards the chest while bent over at the waist.</p>
+                <div class="excNext" onclick="excPick('upperBody', 'Bent-over row')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <button class="backButt" onclick="backBut()">Back</button>
         </div>
+
+        <div id="createCircuit3" class="circuitCreate">
+            <div class="titleExcWrap">
+                <h1 class="titleExc">Pick Your<br>Lower-Body<br>Exercise</h1>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Squat</h2>
+                <p class="upperDesk">Bending the knees and hips to lower the body towards the ground, then pushing back up to a standing position.</p>
+                <div class="excNext" onclick="excPick('lowerBody','Squat')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Superman</h2>
+                <p class="upperDesk">Lifting the arms, legs, and chest off the ground while lying face down.</p>
+                <div class="excNext" onclick="excPick('lowerBody', 'Superman')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Forward lunge</h2>
+                <p class="upperDesk">Stepping forward with one leg and lowering the body until the front thigh is parallel to the ground, then back up to the starting position.</p>
+                <div class="excNext" onclick="excPick('lowerBody', 'Forward lunge')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <button class="backButt" onclick="backBut()">Back</button>
+        </div>
+
+        <div id="createCircuit4" class="circuitCreate">
+            <div class="titleExcWrap">
+                <h1 class="titleExc">Pick Your<br>Compound<br>Exercise</h1>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Jumping lunge</h2>
+                <p class="upperDesk">Jumping up in the air and switching the position of your legs mid-air, and landing back in a lunge position with the opposite leg forward.</p>
+                <div class="excNext" onclick="excPick('compound','Jumping lunge')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Mountain climbers</h2>
+                <p class="upperDesk">Quickly alternating the position of the legs by jumping and switching them back and forth.</p>
+                <div class="excNext" onclick="excPick('compound', 'Mountain climbers')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Thruster</h2>
+                <p class="upperDesk">Combining a front squat with an overhead press, using a barbell or dumbbells, to target multiple muscle groups in one movement.</p>
+                <div class="excNext" onclick="excPick('compound', 'Thruster')">
+                    <h2>Next</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <button class="backButt" onclick="backBut()">Back</button>
+        </div>
+
+        <div id="createCircuit5" class="circuitCreate">
+            <div class="titleExcWrap">
+                <h1 class="titleExc">Pick Your<br>Cardio<br>Exercise</h1>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Jumping rope</h2>
+                <p class="upperDesk">a cardiovascular exercise that involves using a rope and jumping over it repeatedly while keeping a steady rhythm.</p>
+                <div class="excNext" onclick="excPick('cardio','Jumping')">
+                    <h2>Finish</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Running</h2>
+                <p class="upperDesk">A high-impact cardiovascular exercise that involves moving quickly on foot, burning calories, improving endurance.</p>
+                <div class="excNext" onclick="excPick('cardio', 'Running')">
+                    <h2>Finish</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <div class="excTab" onclick="toggleExc(this)">
+                <h2 class="excTitle">Cycling</h2>
+                <p class="upperDesk">A low-impact cardiovascular exercise that involves riding a bicycle, either outdoors or indoors on a stationary bike.</p>
+                <div class="excNext" onclick="excPick('cardio', 'Cycling')">
+                    <h2>Finish</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            <button class="backButt" onclick="backBut()">Back</button>
+        </div>
+
+
 
     </div>
 
