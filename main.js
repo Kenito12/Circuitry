@@ -1,16 +1,18 @@
-//Global Variable
-
+//Button
+const plusBut = document.getElementById("plusBut");
 //----------------------------------------
 
 //Pages
 const mainPage = document.getElementById("mainPage");
 const firstTime = document.getElementById("firstTime");
 const homePage = document.getElementById("homePage");
+const createCircuit = document.getElementById("createCircuit");
 //----------------------------------------
 
 //Set Pages Default
 firstTime.style.display = "none";
-homePage.style.display = "block";
+homePage.style.display = "none";
+createCircuit.style.display = "block";
 //----------------------------------------
 
 //bodymovin js to play Lottiefiles
@@ -63,4 +65,8 @@ let toggleWidth = (circuitTab) => {
 
 let BeginCircit = () => {
     console.log('circuit start')
+}
+
+plusBut.onclick = () => {
+    console.log('plusBut')
 }

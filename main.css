@@ -158,11 +158,107 @@ body{
     transform: translateY(-30px)!important;
 }
 .subBut:active{
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(132, 132, 132);
 }
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+#homePage{
+    position: relative;
+    height: 95vh;
+}
+#plusBut{
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+}
+#plusBut > img{
+    width: 80px;
+}
+
+#createCircuit{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.headerCc{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: var(--Ppurple);
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 65px;
+}
+#circuitName{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: var(--Ppurple);
+    font-size: 29px;
+    font-style: italic;
+    text-align: center;
+    width: 271px;
+    height: 40px;
+    filter: drop-shadow(0 0 0.75rem rgba(208, 199, 200, 0.564));
+    border: none;
+}
+#circuitName::placeholder{
+    color: #bea9b9;
+}
+.subHead{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: var(--Ppurple);
+    font-size: 29px;
+    font-style: italic;
+    margin: 20px;
+}
+#circle{
+    width: 230px;
+    height: 230px;
+    border-color: var(--Ppurple);
+    border:solid 5px;
+    border-radius: 50%;
+    border-color: var(--Ppurple);
+    margin: 0 auto;
+    color: var(--Ppurple);
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+#timeDisplay{
+    margin-top: 30%;
+}
+#timeSlider{
+    -webkit-appearance: none;
+    width: 259px;
+    height: 14px;
+    background-color: var(--Ppurple);
+    outline: none;
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#timeSlider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: var(--Ppurple);
+    cursor: pointer;
+}
+.createButt{
+    width: 212px;
+    height: 44px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 23px;
+    color: white;
+    background-color: var(--Ppurple);
+    border: none;
+    margin-bottom: 3%;
 }
 
