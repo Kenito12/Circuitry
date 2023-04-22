@@ -17,6 +17,10 @@
         <div class="loadanim" id="loadani"></div>
     </div>
 
+    <div class="countdown-wrapper" id="countdown">
+        <div id="countdani"></div>
+    </div>
+
     <div id="mainPage">
 
         <div id="firstTime">
@@ -44,15 +48,7 @@
 
         <div id="homePage">
             <h1 class="header">My Circuits</h1>
-            <div id="tabrender">
-                <!-- <div class="circuitTab" onclick="toggleWidth(this)">
-                    <h2 class="circuitname">Circuit1 <span class="time">30min</span></h2>
-                    <div class="subBut" onclick="BeginCircit()">
-                        <h2>Begin Circuit</h2>
-                        <img src="Assets/arrow.png" alt="arrow.png">
-                    </div>
-                </div> -->
-            </div>
+            <div id="tabrender"></div>
             <div id="plusBut">
                 <img src="Assets/PlusBut.png" alt="PlusBut.png">
             </div>
@@ -193,8 +189,24 @@
             </div>
             <button class="backButt" onclick="backBut()">Back</button>
         </div>
-
-
+        
+        <div id="circuitPage">
+            <div id="timeDisplay">00:00</div>
+            <div id="excDisplay">Push-up</div>
+            <div id="instruction">
+                <h2>Instruction</h2>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel tempor elit, ac vestibulum mi. Duis tincidunt purus in felis scelerisque, id bibendum nunc ultricies. Nunc eu gravida velit. Nulla non aliquet metus. Nulla eu enim id augue posuere elementum. Sed eget lorem a sem dictum vulputate in sed purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nibh leo, malesuada at accumsan quis, elementum sit amet purus. Phasellus nisi libero, congue nec malesuada in, tristique eget erat. Aliquam ac aliquam purus. Etiam posuere tempus est vel ornare. Vestibulum tincidunt dignissim arcu a congue. In vel eleifend mi.
+                    </p>
+                </div>
+            </div>
+            <div id="circuitPageBut">
+                <img src="Assets/Menu.png" alt="Menu.png" id="menu">
+                <img src="Assets/Pause.png" alt="Pause.png" id="pause" >
+                <img src="Assets/Stop.png" alt="Stop.png" id="stop" >
+            </div>
+        </div>
 
     </div>
 

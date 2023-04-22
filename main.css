@@ -29,6 +29,24 @@ body{
     align-self: center;
 }
 
+.countdown-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: white;
+    text-align: center;
+    z-index: 3;
+}
+#countdani{
+    width: 258px;
+    margin: 80% auto;
+}
+
 #mainPage{
     margin: 0;
     position: relative;
@@ -169,7 +187,7 @@ body{
     height: 95vh;
 }
 #plusBut{
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     left: 40%;
 }
@@ -356,3 +374,75 @@ body{
     margin-bottom: 3%;
 }
 
+#timeDisplay{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 104px;
+    width: 266px;
+    margin: 15% auto;
+    margin-bottom: 3%;
+    color: var(--Ppurple);
+}
+
+#excDisplay{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 54px;
+    width: 216px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    color: var(--Ppurple);
+}
+
+#instruction{
+    width: 289px;
+    margin: 0 auto;
+}
+
+#instruction > h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 27px;
+    color: var(--Ppurple);
+}
+
+#instruction > div{
+    width: 257px;
+    text-align: justify;
+    margin: 0 auto;
+}
+#instruction > div > p{
+    font-size: 18px;
+
+}
+
+#circuitPage{
+    position: relative;
+}
+#circuitPageBut > img{
+    position: fixed;
+    right: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu{
+    z-index: 3;
+}
+#pause{
+    z-index: 2;
+}
+#stop{
+    z-index: 2;
+}
+
+.pauseUp{
+    transform: translateY(-85px)!important;
+}
+.stopUp{
+    transform: translateY(-170px)!important;
+}
