@@ -47,6 +47,46 @@ body{
     margin: 80% auto;
 }
 
+#congrate{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: white;
+    text-align: center;
+    z-index: 5;
+}
+#congrate > h1{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    color: var(--Ppurple);
+    margin-top: 100%;
+}
+#congrateani{
+    position: fixed;
+    top:20%;
+}
+
+#menuPop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 4;
+}
+
 #mainPage{
     margin: 0;
     position: relative;
@@ -374,7 +414,7 @@ body{
     margin-bottom: 3%;
 }
 
-#timeDisplay{
+#CircuitTimeDisplay{
     font-family: 'Arimo', sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -390,10 +430,11 @@ body{
     font-weight: 700;
     font-style: normal;
     font-size: 54px;
-    width: 216px;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 0;
     color: var(--Ppurple);
+    text-align: center;
 }
 
 #instruction{
@@ -417,8 +458,9 @@ body{
     margin: 0 auto;
 }
 #instruction > div > p{
+    font-family: 'Heebo', sans-serif;
+    color: #707070;
     font-size: 18px;
-
 }
 
 #circuitPage{
@@ -445,4 +487,49 @@ body{
 }
 .stopUp{
     transform: translateY(-170px)!important;
+}
+
+#stopMenu{
+    width: 345px;
+    height: 248px;
+    margin: 70% auto;
+    background-color: white;
+    border-radius: 30px;
+}
+#stopMenu > h2{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    color: var(--Ppurple);
+    padding: 15px;
+    padding-top: 25px;
+}
+
+#pauseMenu{
+    width: 254px;
+    height: 254px;
+    margin: 70% auto;
+    background-color: white;
+    border-radius: 50%;
+}
+#pauseMenu > h1{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+    color: var(--Ppurple);
+    margin: 0;
+    padding-top: 35%;
+}
+#pauseMenu > div{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #a5a5a5;
+    margin: 0;
+    padding: 0;
+}
+#pauseMenu > div > span{
+    color: #707070;
 }

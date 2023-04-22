@@ -21,6 +21,23 @@
         <div id="countdani"></div>
     </div>
 
+    <div id="menuPop">
+        <div id="stopMenu">
+            <h2>Do you want to stop your Circuit?</h2>
+            <button class="backButt" onclick="stopY()">Yes</button>
+            <button class="backButt" onclick="stopN()">No</button>
+        </div>
+        <div id="pauseMenu">
+            <h1>Pause</h1>
+            <div><span>Tap</span> to unpause</div>
+        </div>
+    </div>
+
+    <div id="congrate">
+        <div id="congrateani"></div>
+        <h1>Congratulation!</h1>
+    </div>
+
     <div id="mainPage">
 
         <div id="firstTime">
@@ -166,7 +183,7 @@
             <div class="excTab" onclick="toggleExc(this)">
                 <h2 class="excTitle">Jumping rope</h2>
                 <p class="upperDesk">a cardiovascular exercise that involves using a rope and jumping over it repeatedly while keeping a steady rhythm.</p>
-                <div class="excNext" onclick="excPick('cardio','Jumping')">
+                <div class="excNext" onclick="excPick('cardio','Jumping rope')">
                     <h2>Finish</h2>
                     <img src="Assets/arrow.png" alt="arrow.png">
                 </div>
@@ -191,13 +208,12 @@
         </div>
         
         <div id="circuitPage">
-            <div id="timeDisplay">00:00</div>
+            <div id="CircuitTimeDisplay">00:00</div>
             <div id="excDisplay">Push-up</div>
             <div id="instruction">
                 <h2>Instruction</h2>
                 <div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel tempor elit, ac vestibulum mi. Duis tincidunt purus in felis scelerisque, id bibendum nunc ultricies. Nunc eu gravida velit. Nulla non aliquet metus. Nulla eu enim id augue posuere elementum. Sed eget lorem a sem dictum vulputate in sed purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nibh leo, malesuada at accumsan quis, elementum sit amet purus. Phasellus nisi libero, congue nec malesuada in, tristique eget erat. Aliquam ac aliquam purus. Etiam posuere tempus est vel ornare. Vestibulum tincidunt dignissim arcu a congue. In vel eleifend mi.
+                    <p id="ccDes">
                     </p>
                 </div>
             </div>
