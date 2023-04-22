@@ -213,6 +213,7 @@ let excPick = (type, exc) => {
 }
 //----------------------------------------
 
+//create circuit and link to local storage
 let circuitCreated = () => {
     let circuitObj
     if (localStorage.hasOwnProperty("circuits")) {
@@ -226,8 +227,9 @@ let circuitCreated = () => {
             "compound": compound,
             "cardio": cardio,
         })
-        circuit = JSON.stringify(circuitObj)
-        localStorage.setItem("circuits", circuit)
+        circuit = JSON.stringify(circuitObj);
+        localStorage.setItem("circuits", circuit);
+        renderCircuits();
     } else {
         circuitObj = JSON.parse(circuit);
         circuitObj['circuits'].push({
@@ -238,8 +240,33 @@ let circuitCreated = () => {
             "compound": compound,
             "cardio": cardio,
         })
-        circuit = JSON.stringify(circuitObj)
-        localStorage.setItem("circuits", circuit)
+        circuit = JSON.stringify(circuitObj);
+        localStorage.setItem("circuits", circuit);
+        renderCircuits();
     }
     console.log(circuitObj);
+}
+//----------------------------------------
+
+let renderCircuits = () => {
+    const tabrender = document.getElementById("tabrender");
+    let circuitObj;
+    if(localStorage.hasOwnProperty("circuits")){
+        circuit = localStorage.getItem("circuits")
+        circuitObj = JSON.parse(circuit);
+        tabrender.innerHTML = ""
+        for ( let i = 0; i < circuitObj.circuits.length; i++){
+            let tab = `
+            <div class="circuitTab" onclick="toggleWidth(this)">
+                <h2 class="circuitname">${circuitObj.circuits[i].name} <span class="time">${circuitObj.circuits[i].time}min</span></h2>
+                <div class="subBut" onclick="BeginCircit()">
+                    <h2>Begin Circuit</h2>
+                    <img src="Assets/arrow.png" alt="arrow.png">
+                </div>
+            </div>
+            `
+
+            tabrender.innerHTML += tab;
+        }
+    }
 }
