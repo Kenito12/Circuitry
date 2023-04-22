@@ -37,7 +37,7 @@
                     <button class="welButt">Learn More</button>
                     </a>
                     <br>
-                    <button class="welButt">Create My First Circuitry</button>
+                    <button class="welButt" id="firstCircuit">Create My First Circuitry</button>
                 </div>
             </div>
         </div>
@@ -60,14 +60,18 @@
 
         <div id="createCircuit">
             <h1 class="headerCc">Create Circuit</h1>
-            <input type="text" id="circuitName" placeholder="Circuit Name" maxlength="10">
+            <input type="text" id="circuitName" placeholder="Circuit Name" maxlength="10" oninput="nameCircuit()">
             <h2 class="subHead">Select Time Limit</h2>
             <div id="circle">
                 <div id="timeDisplay">00:00</div>
             </div>
-            <input type="range" id="timeSlider" min="0" max="60" step="5" value="0">
-            <button class="createButt">Next</button>
-            <button class="createButt">Cancel</button>
+            <input type="range" id="timeSlider" min="0" max="60" step="5" value="0" oninput="displayTime()">
+            <button class="createButt" onclick="firstNext()">Next</button>
+            <button class="createButt" id="cancelBut">Cancel</button>
+        </div>
+
+        <div id="createCircuit2">
+            createCircuit2
         </div>
 
     </div>
